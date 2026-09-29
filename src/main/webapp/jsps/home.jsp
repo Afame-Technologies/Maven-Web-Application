@@ -15,7 +15,7 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>Sunil - Home Page</title>
+    <title>Sunil - Web Page</title>
 
     <style>
 
