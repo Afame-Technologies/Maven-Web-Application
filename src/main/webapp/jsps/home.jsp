@@ -169,7 +169,7 @@
         <br>
 
         <p>
-            I am currently pursuing my
+            I have completed my 
             <strong>M.Tech in Artificial Intelligence & Machine Learning</strong>
             and working on developing practical skills in
             Java, Python, DevOps, AWS, Docker, Jenkins, Git and CI/CD.
