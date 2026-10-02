@@ -5,7 +5,9 @@ node {
     echo "The Build No is:  ${env.BUILD_NUMBER}"
 
     properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5'))])
-    stage('CheckoutCode'){
+    properties([pipelineTriggers([pollSCM('* * * * *')])])
+
+stage('CheckoutCode'){
         git branch: 'development', credentialsId: '20627e37-1e4c-4ad6-8724-78e2f07e6a3e', url: 'https://github.com/Afame-Technologies/Maven-Web-Application.git'
     }
     stage('Build'){
