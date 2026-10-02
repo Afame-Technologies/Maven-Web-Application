@@ -8,7 +8,7 @@ node {
     properties([pipelineTriggers([pollSCM('* * * * *')])])
 
 stage('CheckoutCode'){
-        buildName 'Dev - ${env.BUILD_NUMBER}'
+        buildName 'Dev - ${BUILD_NUMBER}'
         git branch: 'development', credentialsId: '20627e37-1e4c-4ad6-8724-78e2f07e6a3e', url: 'https://github.com/Afame-Technologies/Maven-Web-Application.git'
     }
     stage('Build'){
